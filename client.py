@@ -47,7 +47,7 @@ if __name__ == '__main__':
 
 	parser = ArgumentParser()
 	parser.add_argument("--path", default = "img", help = "Path to files for upload. Default path is '.'.")
-	parser.add_argument("--bucket_name", default = "cristi-dragu-big-data-bucket", help = "Default bucket.")
+	parser.add_argument("--bucket_name", default = "your-bucket-name", help = "Default bucket.")
 	args = parser.parse_args()
 
 	send_files(AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, args.path, args.bucket_name)
